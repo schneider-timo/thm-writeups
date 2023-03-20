@@ -154,7 +154,7 @@ james@overpass-prod:~$ cat user.txt
 thm{#######################}
 ```
 
-with `ls -al` we can find a .overpass file which contains an interesting looking string. To decrypt it we first have to find out what encryption method overpass uses, by taking a look into the source code:
+with `ls -al` we can find a .overpass file which contains an interesting looking string. Since this room is about a password manager, this .overpass file most likely is a encrypted password. To decrypt it we first have to find out what encryption method overpass uses. by taking a look into the source code we find the following:
 
 ```
 //Load the credentials from the encrypted file
